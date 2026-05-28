@@ -3,7 +3,7 @@ import { Player } from './Player.svelte';
 
 export class Game {
     board: Board;
-    players: Player[] = $state([]);  // ← add $state
+    players: Player[] = $state([]);
 
     constructor() {
         this.board = new Board(5, 5);
@@ -26,7 +26,7 @@ export class Game {
     updatePlayerPosition(id: string, position: number): void {
         const player = this.getPlayer(id);
         if (player && this.board.isValidPosition(position)) {
-            player.moveTo(position);  // ← reactive now, no manual spread needed
+            player.moveTo(position);
         }
     }
 }

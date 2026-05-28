@@ -10,7 +10,7 @@
   onMount(() => {
     // Add some test players
     game.addPlayer('1', 'Player 1', 'red');
-    game.addPlayer('2', 'Player 2', 'blue', 1);
+    game.addPlayer('2', 'Player 2', 'blue');
     game.addPlayer('3', 'Player 3', 'yellow', 2);
     game.addPlayer('4', 'Player 4', 'green', 3);
 
